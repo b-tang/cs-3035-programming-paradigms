@@ -1,0 +1,61 @@
+1. Write a Haskell function that returns the factorial of its single parameter.  Use a range and the product function.
+
+
+2. Create a list that repeats the names of the Three Stooges (Moe, Larry, Shemp) in order infinitely many times.   Write a function that takes two parameters, a list and a number, and uses a list comprehension to print "slap" plus each string in the list until n slaps have been reported.  Here is sample output:
+
+slaps 20
+["slap Moe","slap Larry","slap Shemp","slap Moe","slap Larry","slap Shemp","slap Moe","slap Larry","slap Shemp","slap Moe","slap Larry","slap Shemp","slap Moe","slap Larry","slap Shemp","slap Moe","slap Larry","slap Shemp","slap Moe","slap Larry"]
+
+Show your output as well as the code.
+
+
+3. Write a Haskell function whose content is a list comprehension that returns a list of lists.  The return list is a full list of all Pythagorean triples than consists entirely of integers between 1 and 15.  It is OK that the GHCI will convert the ints to doubles. The list should not contain duplicates (ie, if it contains [3.0, 4.0, 5.0] it should not also contain [4.0, 3.0, 5.0])  Put all the necessary code in the window, including code you wrote in the ungraded exercise if you reuse it here.  Show your output as well.
+
+Hint:
+
+first write code to create a list of all three-member lists [a, b, c] whose members are all integers between 1 and 15
+
+then refine this code so that the list contains only those lists [a, b, c] for which a<=b and b <= c
+
+then refine that code so that the list contains only those lists [a, b, c] which are Pythagorean triples.
+
+Put all the necessary code in the window, including code you wrote in the ungraded exercise if you reuse it here.  Show your output as well.
+
+
+4. Write a Haskell function like the one in #3, but that takes two parameters, x and y, and returns a list of all Pythagorean triples for which the length of each of the sides is between x and y
+
+Put all the necessary code in the window, including code you wrote in the ungraded exercise if you reuse it here.  Show your output as well.
+
+
+5. Write a Haskell function that takes two lists of strings and, for each possible pair of one string from the first list and one from the second, shows whether the two have equal length, or, if not, which is shorter.  Approach this in this way:
+
+Write a function called
+
+shorter [x, y]
+
+that takes a two-member list and returns a message indicating which element in the list, if either, has the shorter length, and, if they are equal in length, that this is so.  The message should be similar to this:
+
+"length of Harpo is the same as length of Shemp"
+
+or
+
+"length of Moe is shorter than length of Zeppo"
+
+ 
+
+Then write a function called
+
+short as bs
+
+that takes two lists of strings as parameters and uses a list comprehension to create a list of all possible two-element lists in which the first element is an element of the first list and the second element is an element from the second list, and makes a list of the output from shorter for each pair. 
+
+ 
+
+The output should look similar to this:
+
+Prelude> short mBros stooges
+["length of Moe is shorter than length of Groucho","length of Curly is shorter than length of Groucho","length of Shemp is shorter than length of Groucho","length of Moe is shorter than length of Harpo","length of Harpo is the same as length of Curly","length of Harpo is the same as length of Shemp","length of Moe is shorter than length of Zeppo","length of Zeppo is the same as length of Curly","length of Zeppo is the same as length of Shemp","length of Moe is shorter than length of Beppo","length of Beppo is the same as length of Curly","length of Beppo is the same as length of Shemp"]
+
+ 
+
+Turn in your code and output from a sample run
