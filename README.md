@@ -12,7 +12,7 @@ This repository contains projects and assignments for the CS 3035 Programming Pa
 
 ## Getting Started
 1. Clone the repository:
-```
+```bash
 git clone https://github.com/b-tang/cs-3035-programming-paradigms.git
 ``` 
 
